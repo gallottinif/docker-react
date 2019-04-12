@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t  gallottinif/docker-react -f Dockefile.dev . 
+  - docker build -t gallottinif/docker-react -f Dockerfile.dev . 
 
 script:
   - docker run gallottinif/docker-react npm run test -- --coverage
